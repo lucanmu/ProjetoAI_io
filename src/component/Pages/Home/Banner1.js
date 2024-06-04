@@ -29,7 +29,7 @@ const Banner = () => {
                                     <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="LlCwHnp3kL4" onClose={() => setOpen(false)} />
                                     <Link className="popup-video" onClick={() => setOpen(true)}>
                                         <i className="ri-play-fill"></i>
-                                        <span>Assista ao Vídeo de Apresentação</span></Link>
+                                        <span>Assista ao Vídeo de </span></Link>
                                 </div>
                             </div>
                         </div>
