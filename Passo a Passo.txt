@@ -1,0 +1,66 @@
+Subir o Servidor ReactJS usando Yarn:
+Certifique-se de que o Node.js e o Yarn estejam instalados:
+
+Você pode baixar e instalar o Node.js no site oficial: Node.js
+O Yarn pode ser instalado usando o npm, que é instalado automaticamente com o Node.js:
+bash
+Copy code
+npm install -g yarn
+Instale as dependências do projeto:
+
+Abra um terminal na pasta raiz do seu projeto React.
+Execute o comando abaixo para instalar as dependências do projeto listadas no package.json:
+bash
+Copy code
+yarn install
+Inicie o servidor de desenvolvimento:
+
+Após instalar as dependências, você pode iniciar o servidor de desenvolvimento usando o seguinte comando:
+bash
+Copy code
+yarn start
+Isso iniciará o servidor ReactJS e abrirá uma nova guia do navegador com o aplicativo em execução. O servidor continuará em execução até ser explicitamente interrompido (geralmente pressionando Ctrl + C no terminal).
+Subir o Servidor Django:
+Certifique-se de que o Python e o pip estejam instalados:
+
+Verifique se o Python está instalado executando python --version no terminal.
+O pip geralmente é instalado automaticamente com o Python. Você pode verificar sua instalação com pip --version.
+Instale as dependências do projeto:
+
+Navegue até o diretório raiz do seu projeto Django.
+Crie um ambiente virtual (opcional, mas recomendado):
+bash
+Copy code
+python -m venv venv
+Ative o ambiente virtual:
+No Windows:
+bash
+Copy code
+venv\Scripts\activate
+No macOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+Instale as dependências do Django e outras listadas no requirements.txt:
+bash
+Copy code
+pip install -r requirements.txt
+Execute as migrações do banco de dados:
+
+Se for a primeira vez que você executa o projeto, ou se houver alterações nos modelos de banco de dados, você precisa aplicar as migrações:
+bash
+Copy code
+python manage.py migrate
+Inicie o servidor Django:
+
+Após instalar as dependências e aplicar as migrações, você pode iniciar o servidor Django com o seguinte comando:
+bash
+Copy code
+python manage.py runserver
+O servidor Django será iniciado e estará disponível em http://localhost:8000/.
+Agora você deve ter o servidor ReactJS e o servidor Django em execução localmente. Certifique-se de que não há conflitos de portas entre os dois servidores. Por padrão, o servidor ReactJS roda na porta 3000 e o servidor Django na porta 8000. Se precisar alterar as portas, você pode fazer isso nos arquivos de configuração relevantes (package.json para o ReactJS e settings.py para o Django).
+
+
+
+
+
