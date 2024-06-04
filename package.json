@@ -53,6 +53,8 @@
       "last 1 safari version"
     ]
   },
-
-  "homepage": "https://lucanmu.github.io/ProjetoAI_io"
+  "homepage": "https://lucanmu.github.io/ProjetoAI_io",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
