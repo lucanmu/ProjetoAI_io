@@ -54,7 +54,7 @@ def transcribe_and_send_partials(audio_file):
         caminho_temporario = 'temp_audio.wav'
         with open(caminho_temporario, 'wb') as f:
             segment.export(f, format="wav")
-        transcription = transcrever_audio(caminho_temporario, api_key="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")
+        transcription = transcrever_audio(caminho_temporario, api_key=" ")
         os.remove(caminho_temporario)
         if transcription:
             partial_transcriptions.append(transcription)
@@ -88,7 +88,7 @@ def transcrever_audio_instantly(audio_file):
     with open(caminho_temporario, 'wb') as f:
         for chunk in audio_file.chunks():
             f.write(chunk)
-    transcription = transcrever_audio(caminho_temporario, api_key="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")
+    transcription = transcrever_audio(caminho_temporario, api_key=" ")
     os.remove(caminho_temporario)
     return transcription if transcription else None
 
@@ -101,7 +101,7 @@ def process_action(request):
         transcription = data.get('transcription')
 
         # Executando a ação usando a OpenAI
-        client = OpenAI(api_key="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")
+        client = OpenAI(api_key=" ")
         MODEL = "gpt-4-0125-preview"
 
         response = client.chat.completions.create(
@@ -130,7 +130,7 @@ def projeto_form(request):
         mensagem = data.get('mensagem')
 
         # Definindo sua chave de API
-        client = OpenAI(api_key="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")
+        client = OpenAI(api_key=" ")
         MODEL = "gpt-4-0125-preview"
 
         # Salvando o JSON recebido em um arquivo
