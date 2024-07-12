@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-api_key = "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"
+api_key = "CHAVEAPI"
 
 def transcrever_audio(caminho_audio, api_key):
     # Função para transcrever áudio usando a API da OpenAI
