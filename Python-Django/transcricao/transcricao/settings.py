@@ -28,7 +28,7 @@ environ.Env.read_env(BASE_DIR / ".env")
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-SECRET_KEY = 'django-insecure-gua0py7me_y9vnre4c)3!7pk-m8fvm*$iskb0vt9#^xy8+xff#'
+SECRET_KEY = ' '
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -104,7 +104,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'auth_system',
         'USER': 'postgres',
-        'PASSWORD': 'Preto2011#',
+        'PASSWORD': ' ',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -113,10 +113,10 @@ DATABASES = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'adm.projetoai@gmail.com'
-EMAIL_HOST_PASSWORD = 'qoey jkgo todz qvjm'
+EMAIL_HOST_USER = ' '
+EMAIL_HOST_PASSWORD = ' '
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'adm.projetoai@gmail.com'
+DEFAULT_FROM_EMAIL = ' '
 DOMAIN = 'localhost:3000'
 SITE_NAME = "ProjetoAI"
 
