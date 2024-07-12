@@ -80,7 +80,7 @@ def continuar_interacao(resposta_atual, response, respostas_antigas):
 
     resposta1 = resposta1_str
 
-    api_key = "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"
+    api_key = "CHAVEAPI"
     client = OpenAI(api_key=api_key)
     MODEL = "gpt-4-0125-preview"
 
@@ -142,7 +142,7 @@ def interagir_chatgpt(respostas_antigas):
 
     acao = input("O que deseja fazer com o texto transcrito? ")
 
-    api_key = "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"
+    api_key = "CHAVEAPI"
     client = OpenAI(api_key=api_key)
     MODEL = "gpt-4-0125-preview"
 
@@ -207,7 +207,7 @@ def salvar_transcricoes_json(transcricoes):
     interagir_chatgpt([])  # Inicia a interação sem respostas anteriores
 
 if __name__ == "__main__":
-    api_key = "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"
+    api_key = "CHAVEAPI"
     nome_arquivo_base = "gravacao"
     duracao_segundos = 10
     respostas_antigas = []  # Inicialmente, não há respostas antigas
